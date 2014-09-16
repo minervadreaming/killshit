@@ -47,4 +47,3 @@ How long can you last?
 	end
 end
 
-KillShit::Cli.new.start
