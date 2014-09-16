@@ -102,7 +102,7 @@ module KillShit
 				prompt; magic = gets.chomp
 
 				if magic == "1"
-					Spells.heal(player, monster, game)
+					Spells.heal(player)
 				elsif magic == "2"
 					Spells.fireball(player, monster)
 				elsif magic == "3"

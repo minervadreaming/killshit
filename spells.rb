@@ -1,10 +1,10 @@
+require_relative 'room'
 require_relative 'player'
 require_relative 'monster'
-require_relative 'room'
 
 module KillShit
 	class Spells
-		attr_accessor :player
+		attr_accessor :player, :monster
 
 	#Checking if user has enough MP to cast spell
 		def self.mp_check(req, player)
