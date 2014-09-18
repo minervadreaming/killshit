@@ -55,7 +55,7 @@ module KillShit
 
 
 		
-		def self.action
+		def action
 			outline
 			@player.describe
 			vs
@@ -78,15 +78,15 @@ module KillShit
 				else
 				end
 
-				prompt; action = gets.chomp
+				prompt; select = gets.chomp
 		
-				if action == "1"
+				if select == "1"
 					attack(player, monster)
-				elsif action == "2"
+				elsif select == "2"
 					defend
-				elsif action == "3"
+				elsif select == "3"
 					flee
-				elsif action == "4" && player.maglevel >= 1
+				elsif select == "4" && player.maglevel >= 1
 					magic
 				else
 					action
